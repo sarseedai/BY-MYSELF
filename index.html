@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button type="button" id="FadeInClick">Click to fade In</button>
+    <button type="button" id="FadeOutClick">Click to fade Out</button>
+    <button type="button" id="FadeToClick">Click to fade To</button>
+    <p id="fadeMe">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum
+      excepturi labore. A delectus assumenda architecto, soluta asperiores, odio
+      quod in voluptate perspiciatis voluptates omnis nemo aliquam blanditiis
+      quae numquam?
+    </p>
+    <script>
+      $("#FadeInClick").click(function () {
+        $("#fadeMe").fadeIn(2000);
+      });
+
+      $("#FadeOutClick").click(function () {
+        $("#fadeMe").fadeOut(2000);
+      });
+      $("#FadeToClick").click(function () {
+        $("#fadeMe").fadeTo(2000);
+      });
+
+      //   $(document).ready(function () {
+      //     $("#fadeMe").hide();
+      //     $("#FadeMeClick").click(function () {
+      //       $("#fadeMe").fadeIn(3000);
+      //     });
+      //   });
+    </script>
+  </body>
+</html>
